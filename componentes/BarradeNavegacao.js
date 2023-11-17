@@ -1,27 +1,33 @@
 import * as React from 'react';
 import { BottomNavigation, Text } from 'react-native-paper';
+import { Image } from 'react-native';
 
-const MusicRoute = () => <Text>Music</Text>;
+const HomeRoute = () => <Text>Home</Text>;
 
-const AlbumsRoute = () => <Text>Albums</Text>;
+const GaleriaRoute = () => <Text>Galeria</Text>;
 
-const RecentsRoute = () => <Text>Recents</Text>;
+const PesquisarRoute = () => <Text>Perfis</Text>;
 
-const NotificationsRoute = () => <Text>Notifications</Text>;
+
 
 const BarraDeNavegacao = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'music', title: 'Favorites', focusedIcon: 'heart', unfocusedIcon: 'heart-outline'},
-    { key: 'albums', title: 'Albums', focusedIcon: 'album' },
-    { key: 'recents', title: 'Recents', focusedIcon: 'history' },
-    { key: 'notifications', title: 'Notifications', focusedIcon: 'bell', unfocusedIcon: 'bell-outline' },
+    { key: 'Home', title: 'Home',  imageSource: require('./assets/icons_casa.png') },
+    { key: 'Galeria', title: 'Galeria',  imageSource: require('./assets/galeria.png') },
+    { key: 'Pesquisar', title: 'Pesquisar',  imageSource: require('./assets/pesquisar_perfil.png') },
+    
   ]);
+
+  const renderIcon = ({ route, color }) => {
+    return <Image source={route.imageSource} style={{ width: 24, height: 24, tintColor: color }} />;
+  };
+
   const renderScene = BottomNavigation.SceneMap({
-    music: MusicRoute,
-    albums: AlbumsRoute,
-    recents: RecentsRoute,
-    notifications: NotificationsRoute,
+    home: HomeRoute,
+    galeria: GaleriaRoute,
+    pesquisar: PesquisarRoute,
+   
   });
 
   return (

@@ -2,14 +2,14 @@ import React from 'react'
 import {View, Text, TextInput, Button, StyleSheet,  } from 'react-native'
 import BarraSuperior from '../componentes/BarraSuperior';
 import BarraDeNavegacao from '../componentes/BarradeNavegacao';
+import ListaDeFotos from '../componentes/ListaDeFotos';
 
-const Home = () => {
+const CriarAlbum = () => {
     return(
       
          <View style={styles.container}>
               <BarraSuperior/>
-              <Text>Sem albums</Text>
-              <Button style={styles.button} title='Criar album'/>
+              <ListaDeFotos/>
               <BarraDeNavegacao/>   
          </View>
       
@@ -28,4 +28,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Home;
+export default CriarAlbum;
