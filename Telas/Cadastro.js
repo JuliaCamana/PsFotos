@@ -10,7 +10,7 @@ const Cadastro = () => {
             <TextInput style= {styles.input } placeholder="Email" />
             <TextInput style={styles.input} placeholder="Senha" secureTextEntry/> 
             <TextInput style={styles.input} placeholder="Confirmar Senha" secureTextEntry/> 
-            <Button title='Cadastrar' onPress={() => alert('Cadastro Pressed')}/>  
+            <Button title='Cadastrar' onPress={() => alert('Cadastro Pressed')} color="green"/>  
             <Text> Ja tenho uma conta</Text>        
          </View>
        </ImageBackground>  
