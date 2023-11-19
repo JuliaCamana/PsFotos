@@ -7,6 +7,7 @@ const GaleriaRoute = () => <Text>Galeria</Text>;
 const PesquisarRoute = () => <Text>Perfis</Text>;
 
 const BarraDeNavegacao = () => {
+  
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { key: 'Home', title: 'Home', imageSource: require('../assets/icons_casa.png') },
@@ -29,6 +30,8 @@ const BarraDeNavegacao = () => {
       navigationState={{ index, routes }}
       onIndexChange={setIndex}
       renderScene={renderScene}
+      barStyle={{ backgroundColor: 'green' }} // Definindo a cor da barra como azul
+   
     />
   );
 };

@@ -4,16 +4,17 @@ import BarraSuperior from '../componentes/BarraSuperior';
 import BarraDeNavegacao from '../componentes/BarradeNavegacao';
 import BarraDePesquisa from '../componentes/BarraDePesquisa';
 import ListaPessoas from '../componentes/ListaPessoas';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const PesquisarUtilizador = () => {
     return(
       
-         <View style={styles.container}>
+        <SafeAreaProvider>
               <BarraSuperior/>
               <BarraDePesquisa/>
               <ListaPessoas/>
               <BarraDeNavegacao/>   
-         </View>
+       </SafeAreaProvider>
       
        
        )
