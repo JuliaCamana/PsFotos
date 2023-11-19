@@ -5,7 +5,7 @@ const BarraSuperior = () => (
   <Appbar.Header>
     <Appbar.BackAction onPress={() => {}} />
     <Appbar.Content title="PsFotos" />
-    <Appbar.Action icon="calendar" onPress={() => {}} />
+    <Appbar.Action icon="account" onPress={() => {}} />
   </Appbar.Header>
 );
 

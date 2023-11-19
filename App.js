@@ -8,7 +8,7 @@ import PesquisarUtilizador from './Telas/PesquisarUtilizador';
 export default function App() {
   return (
     <View style={styles.container}>
-      <PesquisarUtilizador/>
+      <Home/>
     </View>
   );
 }

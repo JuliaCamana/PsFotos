@@ -7,12 +7,12 @@ const GaleriaRoute = () => <Text>Galeria</Text>;
 const PesquisarRoute = () => <Text>Perfis</Text>;
 
 const BarraDeNavegacao = () => {
-  
+
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'Home', title: 'Home', imageSource: require('../assets/icons_casa.png') },
-    { key: 'Galeria', title: 'Galeria', imageSource: require('../assets/galeria.png') },
-    { key: 'Pesquisar', title: 'Pesquisar', imageSource: require('../assets/pesquisar_perfil.png') },
+    { key: 'Home', title: 'Home', focusedIcon: 'home' },
+    { key: 'Galeria', title: 'Galeria', focusedIcon:'image'},
+    { key: 'Pesquisar', title: 'Pesquisar', focusedIcon:'account' },
   ]);
 
   const renderIcon = ({ route, color }) => {
