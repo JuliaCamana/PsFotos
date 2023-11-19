@@ -10,9 +10,9 @@ const BarraDeNavegacao = () => {
 
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'Home', title: 'Home', focusedIcon: 'home' },
-    { key: 'Galeria', title: 'Galeria', focusedIcon:'image'},
-    { key: 'Pesquisar', title: 'Pesquisar', focusedIcon:'account' },
+    { key: 'Home',  focusedIcon: 'home' },
+    { key: 'Galeria',  focusedIcon:'image'},
+    { key: 'Pesquisar', focusedIcon:'account' },
   ]);
 
   const renderIcon = ({ route, color }) => {

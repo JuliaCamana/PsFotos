@@ -8,7 +8,7 @@ const BarraDePesquisa = () => {
 
   return (
     <Searchbar
-      placeholder="Search"
+      placeholder="Pesquisar Amigos"
       onChangeText={onChangeSearch}
       value={searchQuery}
     />
